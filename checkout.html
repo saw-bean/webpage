@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/5aed494ed7.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/login.css" />
+
+    <title>Payment Checkout Form</title>
+</head>
+<body>
+    <header>
+        <div class="color-bar">
+          <div class="purple"></div>
+          <div class="turquoise"></div>
+          <div class="yellow"></div>
+          <div class="pink"></div>
+          <div class="red"></div>
+          <div class="black"></div>
+        </div>
+        <nav>
+          <ul>
+            <li class="logo"><a href="/Front_page.html">Giftee</a></li>
+            <li class="icons">
+              <a href="/login.html">
+                <i class="fas fa-user"></i>
+                <p>sign in</p>
+              </a>
+              <a href="/cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <p>cart</p>
+              </a>
+              <a href="/wishlist.html">
+                <i class="fas fa-heart"></i>
+                <p>wishlist</p>
+              </a>
+              <a href="/Front_page.html">
+                <i class="fas fa-gift"></i>
+                <p>gift finder</p>
+              </a>
+              <a href="/about.html">
+                <i class="fas fa-info-circle"></i>
+                <p>about</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="login">
+        
+        <h2>Payment Gateway</h2>
+        <h3>Safest Transcation</h3>
+        <form action="Card.php" method="post">
+            <div class="names icon-relative">
+            <label class="label">First name</label>
+            <label>
+                <input type="text" class="input"  placeholder="First name" name="C_Fname" required />
+            </label>
+            </div>
+            <div class="names icon-relative">
+            <label class="label">Last name</label>
+            <label>
+                <input type="text" class="input"  placeholder="Last name" name="C_Lname" required />
+            </label>
+            </div>
+            <div class="address icon-relative">
+        
+            <div class="names icon-relative">
+                <label class="label">Phone no.</label>
+                <label>
+                    <input type="number" class="input"  placeholder="+977 98xxxxxxxx" name="C_number" required>
+                </label>
+                </div>
+            <div class="form">
+            <div class="card space icon-relative">
+                <label class="label">Card holder:</label>
+                <label>
+                    <input type="text" class="input" placeholder="Card holder's Name" name="card_name" required>
+                </label>
+                <i class="fas fa-user"></i></div>
+                
+            <div class="card space icon-relative">
+                <label class="label">Card number:</label>
+                <label>
+                    <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number" name="card_number" required>
+                </label>
+                <i class="far fa-credit-card"></i></div>
+            <div class="card-grp space">
+                <div class="card-item icon-relative">
+                    <label class="label">Expiry date:</label>
+                    <label>
+                        <input type="text"  class="input" data-mask="00 / 00" placeholder="00 / 00" name="card_date" required/>
+                    </label>
+                    <i class="far fa-calendar-alt"></i></div>
+                <div class="card-item icon-relative">
+                    <label class="label">CVC:</label>
+                    <label>
+                        <input type="text" class="input" data-mask="000" placeholder="000" name="card_cvv" required>
+                    </label>
+                    <i class="fas fa-lock"></i></div>
+            </div>
+            <div class='button-container'> <button> PAY </button> </div>
+        </form>
+        </main>
+
+</body>
+</html>
