@@ -1,0 +1,22 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .login-container input {
+    font-size: 64pt;
+    padding: .35em .25em;
+    color: black;
+    margin-bottom: .25em;
+  }
+  
+  .login-container .actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-container [type="submit"] {
+    margin-left: 1em;
+  }
